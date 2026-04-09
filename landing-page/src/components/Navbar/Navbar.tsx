@@ -1,5 +1,10 @@
 //Barra de navagação fixa no topo da página
+import Button from '../Button/Button';
 import './style.css';
+
+function showMessage(){
+    alert('Realizar login');
+}
 
 function Navbar(){
     return(
@@ -16,8 +21,8 @@ function Navbar(){
                 </ul>
 
                 <div>
-                    <button className="btnLogin">Login</button>
-                    <button className="btnCadastro">Começar agora</button>
+                    <Button border={false} filled={false} label='Login' onClick={showMessage} />
+                    <Button border={true} filled={true} label='Começar agora' onClick={()=>{}} />
                 </div>
 
             </div>
